@@ -63,6 +63,35 @@ public class Pickup : MonoBehaviour
            
         }
 
+        if (other.gameObject.tag == "Desert")
+        {
+            if (hasItem == false)
+            {
+                canPickup = true;
+                ObjectIWantToPickup = other.gameObject;
+            }
+
+        }
+
+        if (other.gameObject.tag == "Forest")
+        {
+            if (hasItem == false)
+            {
+                canPickup = true;
+                ObjectIWantToPickup = other.gameObject;
+            }
+
+        }
+
+        if (other.gameObject.tag == "Aquatic")
+        {
+            if (hasItem == false)
+            {
+                canPickup = true;
+                ObjectIWantToPickup = other.gameObject;
+            }
+
+        }
     }
 
     private void OnTriggerExit(Collider other)
