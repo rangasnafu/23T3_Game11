@@ -14,6 +14,7 @@ TagManager:
   - DesertPickup
   - ForestCheck
   - Aquatic
+  - AquaticCheck
   layers:
   - Default
   - TransparentFX
