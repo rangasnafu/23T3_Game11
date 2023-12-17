@@ -18,9 +18,9 @@ public class AquaticDeath : MonoBehaviour
         
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "AquaticCheck")
+        if (other.gameObject.tag == "Pickup")
         {
             gameOverUI.SetActive(true);
             Time.timeScale = 0f;

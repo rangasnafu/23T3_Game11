@@ -10,6 +10,8 @@ public class SliderController : MonoBehaviour
     public Slider slider2;
     public Slider slider3;
 
+    //public int maxValue = 10;
+
     public GameObject winUI;
 
     // Update is called once per frame
@@ -22,6 +24,7 @@ public class SliderController : MonoBehaviour
         {
             // Activate the UI element
             winUI.SetActive(true);
+            Time.timeScale = 0f;
         }
         else
         {
